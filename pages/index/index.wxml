@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <view class="app-name">客户关系管理平台</view>
+  <view class="top xy-center">
+    <view class="top-part xy-center">
+      <text class="num">5</text>
+      <text class="sm-title">今日任务量</text>
+    </view>
+    <view class="top-part xy-center">
+      <text class="num">20</text>
+      <text class="sm-title">本周任务量</text>
+    </view>
+  </view>
+
+  <view class="row nav">
+    <view class="col x-center">
+        <view class="col-4 xy-center"><text class="iconfont icon-kehu">{{kehu}}</text>附近客户</view>
+        <view class="col-4 xy-center"><text class="iconfont icon-xinjiankehu">{{xinjiankehu}}</text>新建客户</view>
+        <view class="col-4 xy-center"><text class="iconfont icon-kehujindu">{{kehujindu}}</text>客户进度</view>
+    </view>
+</view>
+</view>

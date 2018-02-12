@@ -1,0 +1,54 @@
+/* pages/index/index.wxss */
+@import "../../iconfont.wxss";
+
+page {
+  width: 100%;
+  min-height: 100%;
+}
+
+.app-name {
+  font-size: 18px;
+  background: #32a7e3;
+  width: 100%;
+  color: #fffefe;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.top {
+  background: #32a7e3;
+  color: #fffefe;
+  padding: 20px;
+}
+
+.top-part {
+  flex: 1;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.top-part:first-child {
+  border-right: 1px solid #fff;
+}
+
+.num {
+  font-size: 45px;
+  margin-bottom: 20px;
+}
+
+.sm-title {
+  font-size: 15px;
+}
+
+.nav .col-4 {
+  border: 1px solid #f4f4f4;
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  color: #333;
+}
+
+.nav .iconfont {
+  color: #32a7e3;
+}

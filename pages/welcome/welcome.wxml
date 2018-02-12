@@ -1,0 +1,3 @@
+<view class="container">
+  <image src='/imgs/start.png' class='meimg' style="height:{{start_img}}px;"></image>
+</view>
