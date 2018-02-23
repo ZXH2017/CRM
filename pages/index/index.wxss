@@ -4,6 +4,7 @@
 page {
   width: 100%;
   min-height: 100%;
+  background: #f4f4f4;
 }
 
 .app-name {
@@ -41,6 +42,10 @@ page {
   font-size: 15px;
 }
 
+.nav {
+  background: #fff;
+}
+
 .nav .col-4 {
   border: 1px solid #f4f4f4;
   height: 50px;
@@ -51,4 +56,53 @@ page {
 
 .nav .iconfont {
   color: #32a7e3;
+}
+
+.nav .col-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nav .col-3 .iconfont {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.nav .col-3 .iconf1 {
+  background: linear-gradient(to right bottom, #00d8ff, #00b1ff);
+}
+
+.nav .col-3 .iconf2 {
+  background: linear-gradient(to right bottom, #ffcd48, #ffa248);
+}
+
+.nav .col-3 .iconf3 {
+  background: linear-gradient(to right bottom, #fe688d, #f4416d);
+}
+
+.nav .col-3 .iconf4 {
+  background: linear-gradient(to right bottom, #1fd3a1, #1bc373);
+}
+
+.nav .col-3 .iconf5 {
+  background: linear-gradient(to right bottom, #64a1f4, #6468f4);
+}
+
+.nav .col-3 .model {
+  font-size: 13px;
+  color: #666;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.part-title {
+  font-size: 16px;
+  color: #333;
+  padding: 14px 0 20px 20px;
+  background: #fff;
 }

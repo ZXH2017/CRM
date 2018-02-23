@@ -14,9 +14,41 @@
 
   <view class="row nav">
     <view class="col x-center">
-        <view class="col-4 xy-center"><text class="iconfont icon-kehu">{{kehu}}</text>附近客户</view>
-        <view class="col-4 xy-center"><text class="iconfont icon-xinjiankehu">{{xinjiankehu}}</text>新建客户</view>
-        <view class="col-4 xy-center"><text class="iconfont icon-kehujindu">{{kehujindu}}</text>客户进度</view>
+      <view class="col-4 xy-center">
+        <text class="iconfont icon-kehu">{{kehu}}</text>附近客户</view>
+      <view class="col-4 xy-center">
+        <text class="iconfont icon-xinjiankehu">{{xinjiankehu}}</text>新建客户</view>
+      <view class="col-4 xy-center">
+        <text class="iconfont icon-kehujindu">{{kehujindu}}</text>客户进度</view>
     </view>
-</view>
+  </view>
+
+  <view class="part-title">功能管理</view>
+  <view class="row nav x-center">
+    <view class="col x-center">
+      <view class="col-3 xy-center">
+        <text class="iconfont icon-ziliaoku iconf1">{{ziliaoku}}</text>
+        <text class="model">资料库</text>
+      </view>
+      <view class="col-3 xy-center">
+        <text class="iconfont icon-rili iconf2">{{rili}}</text>
+        <text class="model">日历待办</text>
+      </view>
+      <view class="col-3 xy-center">
+        <text class="iconfont icon-tongxunlu iconf3">{{tongxunlu}}</text>
+        <text class="model">通讯录</text>
+      </view>
+      <view class="col-3 xy-center">
+        <text class="iconfont icon-shichang iconf4">{{shichang}}</text>
+        <text class="model">需求市场</text>
+      </view>
+    </view>
+    <view class="col x-center">
+      <view class="col-3 xy-center">
+        <text class="iconfont icon-add iconf5">{{add}}</text>
+        <text class="model">个性化</text>
+      </view>
+    </view>
+  </view>
+
 </view>

@@ -21,7 +21,7 @@
 
 .icon-shezhi:before { content: "\e6a2"; }
 
-.icon-tongxunlu-copy:before { content: "\e600"; }
+.icon-tongxunlu:before { content: "\e600"; }
 
 .icon-icon:before { content: "\e649"; }
 
