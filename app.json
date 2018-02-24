@@ -1,6 +1,36 @@
 {
   "pages": [
-    "pages/welcome/welcome",
-    "pages/index/index"
-  ]
+    "pages/index/index",
+    "pages/welcome/welcome"
+  ],
+  "tabBar": {
+    "color": "#c1c1c1",
+    "selectedColor": "#32a7e3",
+    "list": [
+      {
+        "text": "首页",
+        "pagePath": "pages/index/index",
+        "iconPath": "imgs/navicon/home.png",
+        "selectedIconPath": "imgs/navicon/nowhome.png"
+      },
+      {
+        "text": "消息",
+        "pagePath": "pages/welcome/welcome",
+        "iconPath": "imgs/navicon/msg.png",
+        "selectedIconPath": "imgs/navicon/nowmsg.png"
+      },
+      {
+        "text": "办公",
+        "pagePath": "pages/welcome/welcome",
+        "iconPath": "imgs/navicon/office.png",
+        "selectedIconPath": "imgs/navicon/nowoffice.png"
+      },
+      {
+        "text": "我的",
+        "pagePath": "pages/welcome/welcome",
+        "iconPath": "imgs/navicon/my.png",
+        "selectedIconPath": "imgs/navicon/nowmy.png"
+      }
+    ]
+  }
 }
