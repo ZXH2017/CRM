@@ -1,0 +1,40 @@
+/* pages/database/database.wxss */
+@import "../../iconfont.wxss";
+
+.title {
+  padding: 0 10px;
+  height: 40px;
+  background: #32a7e3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 18px;
+}
+
+.title image {
+  width: 25px;
+  height: 25px;
+}
+
+.title .iconfont {
+  font-size: 15px;
+}
+
+.search {
+  display: flex;
+  margin: 20rpx 25rpx;
+  padding: 10rpx;
+  background: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+.search  .iconfont {
+  font-size: 20px;
+  color: #d9d9d9;
+}
+
+.search  input {
+  font-size: 14px;
+  margin-left: 10rpx;
+}

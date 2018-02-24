@@ -1,17 +1,13 @@
-// pages/index/index.js
+// pages/database/database.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    
+  
   },
-  goDatabase:function(e){
-    wx.redirectTo({
-      url: '../database/database',
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

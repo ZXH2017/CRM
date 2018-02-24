@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/database/database",
     "pages/index/index",
     "pages/welcome/welcome"
   ],

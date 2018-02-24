@@ -1,0 +1,13 @@
+<!--pages/database/database.wxml-->
+<view class="container">
+  <view class="title">
+    <image src="/imgs/back.png"></image>
+    <text>资料库</text>
+    <text class="iconfont icon-add">{{add}}</text>
+  </view>
+
+  <view class="search">
+     <text class="iconfont icon-sousuo2">{{sousuo2}}</text>
+     <input placeholder='搜索'/>
+  </view>
+</view>

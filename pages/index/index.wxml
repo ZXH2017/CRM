@@ -26,7 +26,7 @@
   <view class="part-title">功能管理</view>
   <view class="row nav x-center">
     <view class="col x-center">
-      <view class="col-3 xy-center">
+      <view class="col-3 xy-center" bindtap="goDatabase">
         <text class="iconfont icon-ziliaoku iconf1">{{ziliaoku}}</text>
         <text class="model">资料库</text>
       </view>
