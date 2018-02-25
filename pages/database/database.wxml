@@ -7,7 +7,22 @@
   </view>
 
   <view class="search">
-     <text class="iconfont icon-sousuo2">{{sousuo2}}</text>
-     <input placeholder='搜索'/>
+    <text class="iconfont icon-sousuo2">{{sousuo2}}</text>
+    <input placeholder='搜索' />
   </view>
+
+  <view class="db-nav">
+    <block wx:for="{{module}}" wx:key="id">
+      <view bindtap="partClick" data-id="{{item.id}}" class="{{currentItem==item.id?'active':''}}">{{item.name}}</view>
+    </block>
+  </view>
+
+  <view class='list' wx:for="{{proList.data}}">
+    <view class="indexes">{{item.letter}}</view>
+    <view class="item" wx:for="{{item.data}}">
+      <view class="oneLine">{{item.project_name}}</view>
+    </view>
+    
+  </view>
+  
 </view>

@@ -38,3 +38,40 @@
   font-size: 14px;
   margin-left: 10rpx;
 }
+
+.db-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #333;
+  padding: 0 30rpx;
+  background: #fff;
+}
+
+.db-nav view {
+  padding: 20rpx 10rpx;
+}
+
+.active {
+  color: #32a7e3;
+  border-bottom: 2px solid #32a7e3;
+}
+
+.list .indexes {
+  height: 60rpx;
+  line-height: 60rpx;
+  padding-left: 25rpx;
+  font-size: 16px;
+  color: #666;
+}
+
+.list .item view {
+  background: #fff;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 28rpx;
+  padding-left: 38rpx;
+  color: #333;
+  border-bottom: 1px solid #f4f4f4;
+}

@@ -71,8 +71,15 @@
   justify-content: center;
   align-items: center;
 }
+
 page {
   width: 100%;
   min-height: 100%;
   background: #f4f4f4;
+}
+
+.oneLine{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
