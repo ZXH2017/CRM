@@ -75,3 +75,17 @@
   color: #333;
   border-bottom: 1px solid #f4f4f4;
 }
+
+.filter {
+  position: fixed;
+  right: 30rpx;
+  bottom: 30rpx;
+  width: 110rpx;
+  height: 110rpx;
+  background: linear-gradient(to right bottom, #54d0f9, #36ace6);
+  border-radius: 50%;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 100rpx;
+}

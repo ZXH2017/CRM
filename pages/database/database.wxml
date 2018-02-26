@@ -12,7 +12,7 @@
   </view>
 
   <view class="db-nav">
-    <block wx:for="{{module}}" wx:key="id">
+    <block wx:for="{{modules}}" wx:key="id">
       <view bindtap="partClick" data-id="{{item.id}}" class="{{currentItem==item.id?'active':''}}">{{item.name}}</view>
     </block>
   </view>
@@ -22,7 +22,10 @@
     <view class="item" wx:for="{{item.data}}">
       <view class="oneLine">{{item.project_name}}</view>
     </view>
-    
   </view>
-  
+
+  <navigator class='filter' url='pro-filter/pro-filter'>
+    筛选
+  </navigator>
+
 </view>

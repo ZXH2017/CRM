@@ -2,7 +2,8 @@
   "pages": [
     "pages/database/database",
     "pages/index/index",
-    "pages/welcome/welcome"
+    "pages/welcome/welcome",
+    "pages/database/pro-filter/pro-filter"
   ],
   "tabBar": {
     "color": "#c1c1c1",
