@@ -1,6 +1,12 @@
 /* pages/database/database.wxss */
 @import "../../iconfont.wxss";
 
+.container {
+  position: fixed;
+  width: 100%;
+  background: #f4f4f4;
+}
+
 .title {
   padding: 0 10px;
   height: 40px;
@@ -58,6 +64,9 @@
   border-bottom: 2px solid #32a7e3;
 }
 
+.list-content{
+  padding-top:140px;
+}
 .list .indexes {
   height: 60rpx;
   line-height: 60rpx;
