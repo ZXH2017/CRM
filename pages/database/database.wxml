@@ -58,7 +58,7 @@
 </view>
 
 <view id="letter">
-    <text wx:for="{{newArr}}">{{item}}</text>
+    <text wx:for="{{alphabet}}">{{item}}</text>
 </view>
 <view id="modal">
   A

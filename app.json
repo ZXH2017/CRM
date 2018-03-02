@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/database/database",
     "pages/index/index",
+    "pages/database/database",
     "pages/welcome/welcome",
     "pages/database/pro-filter/pro-filter"
   ],

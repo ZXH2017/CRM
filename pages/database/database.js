@@ -15,7 +15,8 @@ Page({
     currentItem: "1",
     proList: {},
     show: [true],
-    newArr: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '#']
+    newArr: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '#'],
+    alphabet: [],
   },
   // 点击导航选择查看对应模块列表
   partClick: function (options) {
@@ -38,6 +39,7 @@ Page({
   //获取项目列表
   getProjectListMethod: function () {
     var that = this;
+    var _alp = [];
     wx.request({
       url: project_list,
       method: "GET",
@@ -46,8 +48,12 @@ Page({
       },
       success: function (res) {
         if (res.data.code == 200) {
+          for (var i = 0, len = res.data.data.length; i < len; i++) {
+            _alp[i] = res.data.data[i].letter;
+          }
           that.setData({
-            proList: res.data
+            proList: res.data,
+            alphabet: _alp
           })
         }
       },
@@ -134,7 +140,6 @@ Page({
           that.setData({
             fileList: res.data
           })
-          console.log(res)
         }
       },
       fail: function (res) {
