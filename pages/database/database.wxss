@@ -64,9 +64,10 @@
   border-bottom: 2px solid #32a7e3;
 }
 
-.list-content{
-  padding-top:140px;
+.list-content {
+  padding-top: 140px;
 }
+
 .list .indexes {
   height: 60rpx;
   line-height: 60rpx;
@@ -97,4 +98,38 @@
   color: #fff;
   text-align: center;
   line-height: 100rpx;
+}
+
+#letter {
+  position: fixed;
+  top: 300rpx;
+  right: 5rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #999;
+}
+
+#letter text {
+  height: 16px;
+  width: 15px;
+  line-height: 16px;
+  text-align: center;
+}
+
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  margin-left: -35px;
+  margin-top: -35px;
+  width: 70px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.52);
+  text-align: center;
+  line-height: 70px;
+  font-size: 42px;
+  color: #fff;
+  border-radius: 8px;
 }

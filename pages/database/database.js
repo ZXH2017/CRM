@@ -15,6 +15,7 @@ Page({
     currentItem: "1",
     proList: {},
     show: [true],
+    newArr: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '#']
   },
   // 点击导航选择查看对应模块列表
   partClick: function (options) {
