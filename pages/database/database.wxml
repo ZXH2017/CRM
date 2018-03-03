@@ -58,10 +58,10 @@
 </view>
 
 <view id="letter">
-    <text wx:for="{{alphabet}}">{{item}}</text>
+  <text wx:for="{{alphabet}}" class="{{item == first?'active':''}}" data-alp="{{item}}" bindtap="selectAlp">{{item}}</text>
 </view>
-<view id="modal">
-  A
+<view class=" modal {{showModal?'show':''}}">
+  {{showAlphabet}}
 </view>
 
 <navigator class='filter' url='pro-filter/pro-filter'>

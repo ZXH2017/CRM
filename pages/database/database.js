@@ -15,8 +15,10 @@ Page({
     currentItem: "1",
     proList: {},
     show: [true],
-    newArr: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '#'],
+    // newArr: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '#'],
     alphabet: [],
+    first: 'A',
+    showModal: false,
   },
   // 点击导航选择查看对应模块列表
   partClick: function (options) {
@@ -35,6 +37,29 @@ Page({
       'currentItem': id,
       show: show
     })
+  },
+  //点击侧边栏索引==选中字母高亮
+  selectAlp: function (event) {
+    var that = this;
+    var selectAlphabet = event.currentTarget.dataset.alp
+    that.setData({
+      first: selectAlphabet
+    })
+    that.createModel(selectAlphabet);
+  },
+  //展示当前点击字母的模态框
+  createModel: function (options) {
+    var timeout;
+    var that = this;
+    that.setData({
+      showModal: true,
+      showAlphabet: options
+    })
+    timeout = setTimeout(() => {
+      that.setData({
+        showModal: false
+      })
+    }, 800)
   },
   //获取项目列表
   getProjectListMethod: function () {
@@ -157,6 +182,8 @@ Page({
     that.getCompanyListMethod();
     that.getSiteListMethod();
     that.getFileListMethod();
+    console.log(that.alphabet)
+
   },
 
   /**

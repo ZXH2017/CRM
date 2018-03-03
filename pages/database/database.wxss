@@ -5,6 +5,7 @@
   position: fixed;
   width: 100%;
   background: #f4f4f4;
+  z-index: 100;
 }
 
 .title {
@@ -59,7 +60,7 @@
   padding: 20rpx 10rpx;
 }
 
-.active {
+.db-nav .active {
   color: #32a7e3;
   border-bottom: 2px solid #32a7e3;
 }
@@ -74,6 +75,9 @@
   padding-left: 25rpx;
   font-size: 16px;
   color: #666;
+  position: sticky;
+  top: 140px;
+  background: #f4f4f4;
 }
 
 .list .item view {
@@ -115,13 +119,19 @@
   width: 15px;
   line-height: 16px;
   text-align: center;
+  transition: all 0.3s ease-out;
 }
 
-#modal {
+#letter text.active {
+  transform: scale(1.2);
+  color: #000;
+}
+
+.modal {
   position: fixed;
   top: 50%;
   left: 50%;
-  z-index: 100;
+  z-index: 150;
   margin-left: -35px;
   margin-top: -35px;
   width: 70px;
@@ -132,4 +142,10 @@
   font-size: 42px;
   color: #fff;
   border-radius: 8px;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.modal.show{
+  opacity: 1;
 }
