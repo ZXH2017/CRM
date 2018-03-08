@@ -9,8 +9,8 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "1.9.91",
-	"appid": "wxb27300b9026171ff",
-	"projectname": "myCRM",
+	"appid": "touristappid",
+	"projectname": "123",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
